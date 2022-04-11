@@ -1,3 +1,4 @@
+import faker from "@faker-js/faker";
 import { useEffect, useState } from "react";
 import { Button } from "../../components/Button";
 
@@ -10,21 +11,32 @@ const Error: React.FC = ({ children }) => {
   )
 }
 
+type ErroDoContador = {
+  id: string;
+  erro: string;
+}
+
 export const ContadorComErros = () => {
   const [contador, setContador] = useState(0);
-  const [erros, setErros] = useState<string[]>([]);
+  const [erros, setErros] = useState<ErroDoContador[]>([]);
 
   useEffect(() => {
     if (contador < 0) {
       setErros([
-        'Contador não pode ser menor que zero',
+        {
+          id: faker.datatype.uuid(),
+          erro: 'Contador não pode ser menor que zero',
+        },
         ...erros,
       ]);
     }
 
     if (contador > 10) {
       setErros([
-        'Contador não pode ser maior que dez',
+        {
+          id: faker.datatype.uuid(),
+          erro: 'Contador não pode ser maior que dez',
+        },
         ...erros,
       ]);
     }
@@ -57,7 +69,7 @@ export const ContadorComErros = () => {
       <div className="mt-10">
         {
           erros.map(error => (
-            <Error key={error}>{ error }</Error>
+            <Error key={error.id}>{ error.erro }</Error>
           ))
         }
       </div>
