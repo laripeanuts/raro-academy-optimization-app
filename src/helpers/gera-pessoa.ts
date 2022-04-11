@@ -7,7 +7,7 @@ export const geraPessoas = (quantidade: number): Pessoa[] =>
     id: faker.datatype.uuid(),
     nome: faker.name.firstName(),
     email: faker.internet.email(),
-    telefone: faker.phone.phoneNumber(),
+    telefone: faker.phone.phoneNumber('(##) #####-####'),
     endereco: faker.address.streetAddress(),
     foto: faker.image.avatar()
   }));
