@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Button } from "../../components/Button";
 
 const Error: React.FC = ({ children }) => {
+  console.log('===== renderiza erro', children);
   return (
     <h1 className="text-center text-red-500 text-base font-medium">
       { children }
@@ -32,7 +33,7 @@ export const ContadorComErros = () => {
   const incrementa = () => {
     setContador(contador + 1);
   }
-  
+
   const decrementa = () => {
     setContador(contador - 1);
   }
