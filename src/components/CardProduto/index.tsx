@@ -1,4 +1,5 @@
 import { classNames } from "../../helpers/classNames";
+import { formataMoeda } from "../../helpers/formatters";
 import { Produto } from "../../types/Produto";
 
 type CardProdutoProps = {
@@ -10,13 +11,6 @@ export const CardProduto: React.FC<CardProdutoProps> = ({
   produto,
   onClick,
 }) => {
-  const formataMoeda = (valor: number) =>  new Intl.NumberFormat(
-      'pt-BR',
-      { style: 'currency', currency: 'BRL' }
-    )
-    .format(valor)
-
-
   return (
     <li
       key={produto.nome}

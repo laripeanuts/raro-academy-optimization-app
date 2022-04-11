@@ -9,3 +9,9 @@ export const formataData = (date: Date) => Intl.DateTimeFormat(
   { dateStyle: 'short' }
 )
 .format(date);
+
+export const formataMoeda = (valor: number) =>  new Intl.NumberFormat(
+  'pt-BR',
+  { style: 'currency', currency: 'BRL' }
+)
+.format(valor)
