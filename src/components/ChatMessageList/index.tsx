@@ -24,7 +24,7 @@ export const ChatMessageList = () => {
         .filter(mensagem => mensagem.texto.match(new RegExp(buscaMensagem, 'i')))
         .map(mensagem => (
           mensagem.autor.usuarioAtual ?
-            <MyChatMessage  mensagem={ mensagem }  /> :
+            <MyChatMessage mensagem={ mensagem }  /> :
             <ChatMessage mensagem={ mensagem } />
         ))
       }
