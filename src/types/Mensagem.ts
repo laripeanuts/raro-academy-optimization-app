@@ -5,4 +5,5 @@ export type Mensagem = {
   texto: string;
   autor: ParticipanteChat;
   data: Date;
+  lida: boolean;
 }

@@ -32,7 +32,7 @@ export const ChatMessageList = () => {
     const lerProximaMensagem = distanceFromBottom < TAMANHO_MEDIO_MENSAGEM_PX;
     const minhaMensagem = novaMensagem?.autor.usuarioAtual
 
-    if (minhaMensagem && lerProximaMensagem) {
+    if (minhaMensagem || lerProximaMensagem) {
       lerNovasMensagens();
     }
   }, [mensagens.length]);
