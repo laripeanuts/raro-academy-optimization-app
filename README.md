@@ -12,8 +12,8 @@ Analisar o desempenho de uma aplicação de chat utilizando e buscar pelo menos 
 
 - [X] Método do array *MAP* não possui keys.
   - Implementar uma key no *ChatMessageList*
-- [ ] Cada nova mensagem gerada, re-renderiza todos os elementos da tela
-  - Componente *MensagemChat* 
+- [X] Cada nova mensagem gerada, re-renderiza várias vezes
+  - memo no *myChatMessage* e *chatMessage*
 - [ ] Cada mensagem é renderizada duas vezes
   - Componente *MensagemChat* 
 - [ ] Busca mensagem está renderizando tudo a cada mudança
