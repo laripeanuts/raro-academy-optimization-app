@@ -2,7 +2,7 @@
 
 ## 🎯 Objetivos
 
-Analisar o desempenho de uma aplicação de chat utilizando e buscar solução efetivas que a torne mais eficiente e eficaz.
+Analisar o desempenho de uma aplicação de chat utilizando e buscar pelo menos três soluções efetivas que a torne mais eficiente e eficaz.
 
 - [X] Método do array *MAP* não possui keys.
   - Implementar uma key no *ChatMessageList*
@@ -11,7 +11,7 @@ Analisar o desempenho de uma aplicação de chat utilizando e buscar solução e
 - [ ] Cada mensagem é renderizada duas vezes
   - Componente *MensagemChat* 
 - [ ] Busca mensagem está renderizando tudo a cada mudança
-  - Possível solução: Rebounce no *setBuscaMensagem*
+  - Possível solução: debounce no *setBuscaMensagem*
 - [ ] No alto número de mensagens o aplicativo fica muito pesado
   - Possível solução: Páginação
 - [ ] Alto número de renderizações na manipulação do scroll
@@ -40,7 +40,6 @@ Analisar o desempenho de uma aplicação de chat utilizando e buscar solução e
 No diretório raiz do projeto execute:
 
 - Para instalar as dependências `npm install`
-- Para usar o database `npm run database`
 - Para iniciar o projeto `npm start`
 
 
