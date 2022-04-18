@@ -16,12 +16,10 @@ Analisar o desempenho de uma aplicação de chat utilizando e buscar pelo menos 
   - memo no *myChatMessage* e *chatMessage*
 - [X] Busca mensagem está renderizando novamente a cada novo input
   - Debounce no *setBuscaMensagem*
-- [ ] Cada mensagem é renderizada duas vezes
-  - Componente *MensagemChat*
 - [ ] No alto número de mensagens o aplicativo fica muito pesado
-  - Possível solução: Páginação
+  - Possível solução: Paginação
 - [ ] Alto número de renderizações na manipulação do scroll
-  - Controlar *useScroll*
+  - Possível solução: Controlar *useScroll*
 
 ## 📚 Para executar localmente em modo desenvolvedor:
 
