@@ -76,7 +76,7 @@ export const ChatProvider: React.FC = ({ children }) => {
     setMensagens(mensagens => [...mensagens, mensagem]); 
   };
  
-  console.log({mensagens});
+  // console.log({mensagens});
 
   return (
     <ChatContext.Provider

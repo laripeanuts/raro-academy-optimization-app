@@ -6,7 +6,7 @@ import { ChatProvider } from "../../contexts/chat.context";
 export default function Chat() {
   return (
     <ChatProvider>
-     <div className="flex-1 p:2 sm:p-6 justify-between flex flex-col h-screen">
+      <div className="flex-1 p:2 sm:p-6 justify-between flex flex-col max-h-full">
         <ChatHeader />
         <ChatMessageList />
         <ChatTextArea />
