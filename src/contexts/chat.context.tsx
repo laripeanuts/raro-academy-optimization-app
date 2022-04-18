@@ -23,7 +23,7 @@ export type ChatContextProps = {
 const ChatContext = createContext<ChatContextProps>({
   mensagens: [],
   setMensagens: (_: Mensagem[]) => {},
-  buscaMensagem: '',
+  buscaMensagem: "",
   setBuscaMensagem: (_: string) => {},
   participantes: [],
   setParticipantes: (_: ParticipanteChat[]) => {},
@@ -73,7 +73,7 @@ export const ChatProvider: React.FC = ({ children }) => {
       lida: false
     }
 
-    setMensagens(mensagens => [ ...mensagens, mensagem ]);
+    setMensagens(mensagens => [...mensagens, mensagem]); 
   };
  
   console.log({mensagens});
@@ -87,7 +87,7 @@ export const ChatProvider: React.FC = ({ children }) => {
         setBuscaMensagem,
         participantes,
         setParticipantes,
-        adicionaMensagem,
+        adicionaMensagem
       }}
     >
       {children}
