@@ -1,6 +1,6 @@
 # Otimização
 
-## 🎯 Objetivos Chat
+## 🎯 Objetivos Color Responsive
 
 Analisar o desempenho do color responsive e corrigir possíveis quedas de perfomance.
 
