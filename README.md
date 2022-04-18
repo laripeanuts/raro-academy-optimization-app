@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Otimização
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎯 Objetivos Chat
 
-## Available Scripts
+Analisar o desempenho do color responsive e corrigir possíveis quedas de perfomance.
 
-In the project directory, you can run:
+- [X] Implementado um debouce para um delay na hora de chamar a função alteraCor
+- 
+## 🎯 Objetivos Chat
 
-### `npm start`
+Analisar o desempenho de uma aplicação de chat utilizando e buscar pelo menos três soluções efetivas que a torne mais eficiente e eficaz.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [X] Método do array *MAP* não possui keys.
+  - Implementar uma key no *ChatMessageList*
+- [X] Cada nova mensagem gerada, re-renderiza várias vezes
+  - memo no *myChatMessage* e *chatMessage*
+- [X] Busca mensagem está renderizando novamente a cada novo input
+  - Debounce no *setBuscaMensagem*
+- [X] No alto número de mensagens o aplicativo fica muito pesado
+  - Paginação
+- [ ] Alto número de renderizações na manipulação do scroll
+  - Possível solução: Controlar *useScroll*
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📚 Para executar localmente em modo desenvolvedor:
 
-### `npm test`
+No diretório raiz do projeto execute:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Para instalar as dependências `npm install`
+- Para iniciar o projeto `npm start`
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="left">Copyright ☕ 2022 <a href="https://github.com/laripeanuts">laripeanuts</a></p>
