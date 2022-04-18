@@ -2,7 +2,7 @@
 
 ## 🎯 Objetivos Chat
 
-Analisar o desempenho do color reponsive e corrigir possíveis quedas de perfomance.
+Analisar o desempenho do color responsive e corrigir possíveis quedas de perfomance.
 
 - [X] Implementado um debouce para um delay na hora de chamar a função alteraCor
 - 
@@ -12,16 +12,14 @@ Analisar o desempenho de uma aplicação de chat utilizando e buscar pelo menos 
 
 - [X] Método do array *MAP* não possui keys.
   - Implementar uma key no *ChatMessageList*
-- [ ] Cada nova mensagem gerada, re-renderiza todos os elementos da tela
-  - Componente *MensagemChat* 
-- [ ] Cada mensagem é renderizada duas vezes
-  - Componente *MensagemChat* 
-- [ ] Busca mensagem está renderizando tudo a cada mudança
-  - Possível solução: debounce no *setBuscaMensagem*
-- [ ] No alto número de mensagens o aplicativo fica muito pesado
-  - Possível solução: Páginação
+- [X] Cada nova mensagem gerada, re-renderiza várias vezes
+  - memo no *myChatMessage* e *chatMessage*
+- [X] Busca mensagem está renderizando novamente a cada novo input
+  - Debounce no *setBuscaMensagem*
+- [X] No alto número de mensagens o aplicativo fica muito pesado
+  - Paginação
 - [ ] Alto número de renderizações na manipulação do scroll
-  - Controlar *useScroll*
+  - Possível solução: Controlar *useScroll*
 
 ## 📚 Para executar localmente em modo desenvolvedor:
 
