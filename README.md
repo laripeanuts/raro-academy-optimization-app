@@ -8,7 +8,7 @@ Analisar o desempenho do color responsive e corrigir possíveis quedas de perfom
 - 
 ## 🎯 Objetivos Chat
 
-Analisar o desempenho de uma aplicação de chat utilizando e buscar pelo menos três soluções efetivas que a torne mais eficiente e eficaz.
+Analisar o desempenho de uma aplicação de chat e buscar pelo menos três soluções efetivas que a torne mais eficiente e performática.
 
 - [X] Método do array *MAP* não possui keys.
   - Implementar uma key no *ChatMessageList*
@@ -17,9 +17,7 @@ Analisar o desempenho de uma aplicação de chat utilizando e buscar pelo menos 
 - [X] Busca mensagem está renderizando novamente a cada novo input
   - Debounce no *setBuscaMensagem*
 - [X] No alto número de mensagens o aplicativo fica muito pesado
-  - Paginação
-- [ ] Alto número de renderizações na manipulação do scroll
-  - Possível solução: Controlar *useScroll*
+  - Pagiação e adicão de um buttom para chamar mensagens mais antigas
 
 ## 📚 Para executar localmente em modo desenvolvedor:
 
