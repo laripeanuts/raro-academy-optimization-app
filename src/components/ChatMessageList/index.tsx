@@ -41,6 +41,11 @@ export const ChatMessageList = () => {
     }
   }, [mensagens.length]);
 
+   useEffect(() => {
+     setRenderMensagens([...mensagens].splice(-numMensagens, numMensagens));
+     endOfScroll && scrollBottom();
+   }, [mensagens, numMensagens]);
+  
   const lerNovasMensagens = () => {
     scrollBottom();
     mensagens.forEach((mensagem) => {
@@ -48,10 +53,6 @@ export const ChatMessageList = () => {
     });
     setMensagens([...mensagens]);
   };
- 
-  useEffect(() => {
-    setRenderMensagens([...mensagens].splice(-numMensagens, numMensagens));
-  }, [mensagens, numMensagens]);
 
   return (
     <div className="chat">
